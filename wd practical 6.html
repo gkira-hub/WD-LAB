@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title> regular expression</title>
+<script>
+	function pattern_validation(){
+	var username = document.getElementById("identity").value;
+	var pattern = /HAM/i;
+	if(pattern.test(username))
+	{
+	alert("valid username");
+	}
+	else{
+	alert("invalid username");
+	}}
+</script>
+	</head>
+<body>
+	<form action = "wd lab p1 e1.html">
+		  <input id ="identity" placeholder="username" type ="text"/>
+	<button onclick = "pattern_validation()" type ="button">submit</button>
+</form>
+	</body>
+</html>
