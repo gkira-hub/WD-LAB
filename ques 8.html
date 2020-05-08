@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS Cookies</title>
+        <script>
+            function exeptionHandling()
+            {
+                var num = 10;
+                try
+                {
+                    document.write(num.toUpper());
+                }
+                catch(e)
+                {
+                    alert(e.name);
+                }
+                finally
+                {
+                    document.write("<br>Printed");
+                }
+
+            }
+            function start()
+            {
+                var subBtn = document.getElementById('submit');
+                subBtn.addEventListener('click', 
+                                      exeptionHandling, 
+                                      false);
+            }
+            window.addEventListener('load', start, false);
+        </script>
+    </head>
+    <body>
+        <button id="submit" name="submit">Generate Exception</button>
+    </body>
+</html>
